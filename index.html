@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>muxtypoos apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f4f6f8;--tx:#14202b;box-sizing:border-box}
 @media (prefers-color-scheme:dark){:root{--bg:#0f1519;--tx:#e8eef3}}
@@ -23,13 +26,13 @@ a.app::after{content:"›";margin-left:auto;font-size:28px;opacity:.8}
 /* How to Anaesthetise: pastel, drifting colours like the original page */
 .howto{
   color:#4a4063;border:3px solid #fff;margin-left:14px;margin-right:-14px;transform:rotate(-1.5deg) skewX(-3deg);
-  font-family:"Comic Sans MS","Chalkboard SE","Marker Felt","Trebuchet MS",system-ui,sans-serif;
+  font-family:"Comic Neue","Comic Sans MS","Chalkboard SE","Marker Felt","Trebuchet MS",system-ui,sans-serif;
   background:linear-gradient(135deg,#ffc8dd,#bde0fe,#c7f9cc,#fff1b8);
   background-size:300% 300%;animation:bg 18s ease infinite;
   box-shadow:0 4px 0 #ffffff88,0 8px 20px #7a6aa622;
 }
 .howto:hover,.howto:focus-visible{transform:rotate(-1.5deg) skewX(-3deg) translateY(-3px);box-shadow:0 6px 0 #ffffff88,0 12px 26px #7a6aa633}
-.howto b{font-size:20px}
+.howto b{font-size:20px;font-weight:700}
 .howto small{opacity:.75}
 @keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 @media (prefers-reduced-motion:reduce){.howto{animation:none}}
