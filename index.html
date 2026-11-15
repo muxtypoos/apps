@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>muxtypoos apps</title>
+<style>
+:root{--bg:#f4f6f8;--tx:#14202b;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1519;--tx:#e8eef3}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--tx);font:16px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+nav{width:100%;max-width:420px;display:flex;flex-direction:column;gap:14px}
+a.app{display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:18px;color:#fff;text-decoration:none;box-shadow:0 2px 12px rgba(16,40,64,.15);transition:transform .15s,box-shadow .15s}
+a.app:hover,a.app:focus-visible{transform:translateY(-3px);box-shadow:0 6px 20px rgba(16,40,64,.25);outline:none}
+a.app .ic{font-size:34px;line-height:1}
+a.app b{display:block;font-size:20px}
+a.app small{display:block;opacity:.9;font-size:13px}
+a.app::after{content:"›";margin-left:auto;font-size:28px;opacity:.8}
+
+.admix{background:linear-gradient(135deg,#0b6bcb,#2b8ae8)}
+.antrum{background:linear-gradient(135deg,#0b4f5c,#16939e)}
+
+/* How to Anaesthetise: pastel, drifting colours like the original page */
+.howto{
+  color:#4a4063;border:3px solid #fff;margin-left:14px;margin-right:-14px;transform:rotate(-1.5deg) skewX(-3deg);
+  font-family:"Comic Sans MS","Chalkboard SE","Marker Felt","Trebuchet MS",system-ui,sans-serif;
+  background:linear-gradient(135deg,#ffc8dd,#bde0fe,#c7f9cc,#fff1b8);
+  background-size:300% 300%;animation:bg 18s ease infinite;
+  box-shadow:0 4px 0 #ffffff88,0 8px 20px #7a6aa622;
+}
+.howto:hover,.howto:focus-visible{transform:rotate(-1.5deg) skewX(-3deg) translateY(-3px);box-shadow:0 6px 0 #ffffff88,0 12px 26px #7a6aa633}
+.howto b{font-size:20px}
+.howto small{opacity:.75}
+@keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@media (prefers-reduced-motion:reduce){.howto{animation:none}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="app admix" href="https://muxtypoos.github.io/admix/">
+    <span class="ic">💉</span>
+    <span><b>Admix</b><small>Local anaesthetic calculator</small></span>
+  </a>
+  <a class="app antrum" href="https://muxtypoos.github.io/antrum/">
+    <span class="ic">🩻</span>
+    <span><b>Antrum</b><small>Gastric POCUS decision tool</small></span>
+  </a>
+  <a class="app howto" href="https://muxtypoos.github.io/howto/">
+    <span class="ic">🩺</span>
+    <span><b>How to Anaesthetise...</b><small>ask the boss</small></span>
+  </a>
+</nav>
+</body>
+</html>
